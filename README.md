@@ -2,11 +2,11 @@
 ### Race against time with your mouse.
 
 ## How to run it
-# Windows
+### Windows
 ```
 python __init__.py
 ```
-# Linux
+### Linux
 You will need to provide **sudo** permission.
 ```
 sudo python __init__.py
