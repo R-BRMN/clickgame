@@ -4,12 +4,12 @@
 ## How to run it
 ### Windows
 ```
-python __init__.py
+python play.py
 ```
 ### Linux
 You will need to provide **sudo** permission.
 ```
-sudo python __init__.py
+sudo python play.py
 ```
 
 ## How to play
