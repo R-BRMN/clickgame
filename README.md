@@ -2,8 +2,14 @@
 ### Race against time with your mouse.
 
 ## How to run it
+# Windows
 ```
-python clickgame.py
+python __init__.py
+```
+# Linux
+You will need to provide **sudo** permission.
+```
+sudo python __init__.py
 ```
 
 ## How to play
