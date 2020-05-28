@@ -2,7 +2,7 @@
 ### Race against time with your mouse.
 
 ## How to run it
-The game should be run in a terminal which should stay visible throughout the game.
+The game should be run in a terminal which will stay visible throughout the game.
 ### Windows
 ```
 python play.py
