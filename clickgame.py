@@ -7,7 +7,7 @@ class ClickGame:
     ClickGame objects are capable of playing a clicking game with a user.
     
     The game tests the time it takes the user to get from a corner on their
-    screen to a rectangle on the screen[1] and click it.
+    screen to a target area on the screen[1] and click it.
 
     [1] The rectangle currently has no visual representation on the screen.
     """
@@ -73,7 +73,7 @@ class ClickGame:
         self.top_bound = max(pointA[1], pointB[1])
 
 
-    def mouse_in_bounds(self):
+    def mouse_is_in_bounds(self):
         """
         Checks if mouse is inside the bounds of the target rectangle.
         """
@@ -100,12 +100,12 @@ class ClickGame:
         self.launch_time = time.time()
 
 
-    def callback_arrival_click_registrar(self):
+    def act_click(self):
         """
         Sets time of arrival at target rectangle if mouse is in bounds.
         """
         click_time = time.time()
-        if self.mouse_in_bounds():
+        if self.mouse_is_in_bounds():
             self.result_time = click_time - self.launch_time
 
 
@@ -113,7 +113,7 @@ class ClickGame:
         """
         Listen for a click inside the target rectangle, and register the result.
         """
-        callback = mouse.on_click(self.callback_arrival_click_registrar)
+        callback = mouse.on_click(self.act_click)
         while not self.result_time:
             pass
         mouse.unhook(callback)
