@@ -1,5 +1,5 @@
 # Clickgame
-## Race against time with your mouse.
+### Race against time with your mouse.
 
 ## How to run it
 ```
