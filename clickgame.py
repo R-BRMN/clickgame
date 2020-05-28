@@ -131,7 +131,6 @@ class ClickGame:
         self.register_corner()
         print ("Please choose second corner of destination")
         self.register_corner()
-        print (self.target_area_corners)
         self.prepare_bounds()
 
         self.launch()
